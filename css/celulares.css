@@ -1,0 +1,929 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+header{
+    background-color: rgb(255, 250, 241);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5% 0;
+}
+
+#logoheader{
+    margin-left: 8%;
+    padding-right: 15%;
+    border-right: 2px solid rgb(243, 150, 51, 0.8);
+}
+
+nav{
+    display: none;
+    position: absolute;
+    text-align: center;
+
+    width: 150px;
+    margin-left: -85px;
+
+    background-color: rgb(255, 250, 241);
+    border-left: solid 3px rgb(191, 116, 37);
+    border-bottom: solid 3px rgb(191, 116, 37);
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+
+    margin-left: -15px;
+}
+
+
+nav ul li{
+    display: inline-block;
+    text-align: center;
+    width: 60%;
+
+    margin: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(120, 56, 56);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    display: block; 
+    text-align: center;
+}
+
+.borderBottom{
+    padding-bottom: 25%;
+    border-bottom: solid 2px rgba(191, 116, 37, 0.8);
+}
+
+#menu{
+    position: relative;
+}
+
+#menuHamburguesa {
+    display: block;
+    font-size: 45px;
+    padding: 5px;
+    color: rgba(191, 116, 37, 0.8);
+    margin-left: -10%;
+}
+
+#menu:hover nav {
+    display: block;
+}
+
+main{
+    background-color: rgb(125, 38, 38);
+}
+
+#bannerRest{
+    width: 100%;
+}
+
+#frase{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 90%;
+
+    margin-top: 6.5%;
+    margin-bottom: 8%;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 19pt;
+    font-weight: 900;
+    color: rgb(255, 250, 241);
+}
+
+#comidas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 3%;
+}   
+
+#fotomilanesa, #fotopasta, #fotopostre{
+    width: 275px;
+    height: 225px;
+
+    border: 10px solid rgb(255, 250, 241);
+}
+
+#fotomilanesa{
+    margin-bottom: 7.5%;
+}
+
+#fotopasta{
+    margin-bottom: 7.5%;
+}
+
+#vermenu{
+    text-align: center;
+    margin-top: 7.5%;
+    margin-bottom: 7.5%;
+}
+
+#vermenu a{
+    font-size: 16pt;
+    text-decoration: none;
+    color: rgb(255, 250, 241);  
+    border: 5px solid rgb(255, 250, 241);
+    border-radius: 40px;
+    font-weight: 800;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#vermenu a:hover{
+    background-color: rgb(255, 250, 241);
+    color: rgb(125, 38, 38);
+}
+
+#blanco{
+    width: 100%;
+
+    background-color: rgb(255, 250, 241);
+}
+
+.banderas{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 150px;
+
+    padding-top: 17.5%;
+}
+
+#titulo{
+    text-align: center;
+    margin-top: 2%;
+    color: rgb(120, 56, 56);
+    font-size: 23pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+#cuadrohorarios{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12.5%;
+    width: 275px;
+    height: 225px;
+    background-color: rgb(243, 150, 51, 0.8);
+}
+
+#cuadrohorarios #horarios{
+    padding-top: 11.5%;
+    color: rgb(120, 56, 56); 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#dias{
+    font-size: 15pt;
+    font-weight: 700;
+}
+
+#horas{
+    font-size: 15pt;
+    font-weight: 500;
+}
+
+#direccion{
+    text-align: center;
+    align-items: center;
+    display: block;
+   
+    width: 80%; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7.5%;
+    margin-bottom: 12.5%;
+    
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: rgb(120, 56, 56);
+    font-size: 15pt;
+}
+
+#iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 285px;
+    height: 250px;
+}
+
+#marcoIframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 295px;
+    height: 260px;
+    margin-top: 3.5%; 
+
+    border: 5px solid rgb(243, 150, 51, 0.8);
+}
+
+#formulario{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 285px;
+    height: 370px;
+    margin-top: 15%;
+    text-align: center;
+
+    background-color: rgb(243, 150, 51, 0.8);
+}
+
+form{
+    text-align: center;
+}
+
+label{
+    margin-left: -5%;
+    margin-right: 5%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(120, 56, 56);
+    font-weight: 600;
+}
+
+input, select{ 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(120, 56, 56);
+    font-weight: 600;
+    margin-top: 6%;
+
+    width: 55%;
+}
+
+input, select{
+    padding: 2%;
+}
+
+#formulario .btn-primary{
+    margin-top: 8.5%;
+    padding: 4% 8.5%;
+
+    color: rgb(255, 250, 241);
+    background-color: rgb(120, 56, 56);
+    border: rgb(70, 21, 21);
+    border-radius: 25px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14pt;
+    font-weight: 600;
+}
+
+#formulario .btn-primary:hover{
+    background-color: rgb(70, 21, 21);
+}
+
+#porwhatsapp{
+    text-align: center;
+    margin-top: 7.5%;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(120, 56, 56);
+    font-size: 15pt;
+    font-weight: 700;
+}
+
+#numerowhatsapp{
+    text-align: center;
+    padding-bottom: 7.5%;
+    margin-bottom: -1%;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(120, 56, 56);
+}
+
+footer{
+    background-color: rgb(70, 21, 21);
+}
+
+#columnas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#columnas article ul li{
+    color: rgb(255, 250, 241);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+}
+
+#logofooter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 15%;
+}
+
+#logofooter img{
+    padding-bottom: 20%;
+    border-bottom: 2px solid rgb(243, 150, 51, 0.8);
+}
+
+#contacto{
+    margin-top: 10%;
+}
+
+#subtitulo{
+    display: none;
+}
+
+#contacto{
+    text-align: center;
+
+    font-size: 12.5pt;
+    font-weight: 500;
+    font-style: oblique;
+}
+
+#redes{
+    margin-top: 10%;
+    text-align: center;
+}
+
+#redes ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#redes img{
+    height: 30px;
+}
+
+#indice{
+    text-align: center;
+}
+
+#indice ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#indice ul li a{
+    color: rgb(255, 250, 241);
+    text-decoration: none;
+    font-size: 14pt;
+}
+
+#indice ul li a:hover{
+    font-weight: 700;
+    border-bottom: 1.5px solid rgb(255, 250, 241);
+}
+
+#redes #gris{
+    margin-bottom: 15%;
+}
+
+#indice #gris{
+    margin-bottom: 10%;
+}
+
+/* ---------------------------------------  MENU  --------------------------------------------- */
+
+#barramenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding: 1%;
+    width: 100%;
+}
+
+#decoracionIzq{
+    display: block;
+    margin: auto;
+    height: 15px;
+}
+
+#decoracionDer{
+    display: block;
+    margin: auto;
+    height: 15px;
+}
+
+#nombrePagina{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25pt;
+    font-weight: 900;
+    color: rgb(255, 250, 241);
+}
+
+.bannerMenu{
+    width: 100%;
+}
+
+.parallax{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#pilaresSup{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 6.5%;
+}
+
+#pilaresMid{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#pilaresInf{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    padding-bottom: 4.5%;
+}
+
+#flexPastas{
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 2%;
+    margin-bottom: 6%;
+}
+
+#pilaresPastas{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 2.5%;
+}
+
+#banderasPastas h3{
+   margin-bottom: 40px;
+}
+
+#banderasPastas img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 17.5%;
+}
+
+.imgBanderasPastas{
+    width: 150px;
+}
+
+#pilaresInternos{
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 8.5%;
+}
+
+#comida{
+    color: rgb(120, 56, 56);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17.5pt;
+    font-weight: 700;
+
+    width: 275px;
+
+    margin-bottom: 8.5%;
+}
+
+#ingredientes{
+    color: rgb(120, 56, 56);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+
+    width: 275px;
+}
+
+#ingredientesPastas{
+    color: rgb(120, 56, 56);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+
+    width: 250px;
+}
+
+#pastas{
+    color: rgb(120, 56, 56);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17.5pt;
+    font-weight: 700;
+
+    width: 275px;
+}
+
+#salsas{
+    color: rgb(120, 56, 56);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17.5pt;
+    font-weight: 700;
+
+    width: 250px;
+}
+
+#precio{
+    color: rgb(120, 56, 56);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* ---------------------------------------  RESEÑAS  --------------------------------------------- */
+
+#roja{
+    background-color: rgb(125, 38, 38);
+}
+
+#barrareseñas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding: 1%;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+#displayColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+.graficoReseñas{
+    display: none;
+}
+
+.graficoReseñasTablets{
+    width: 230px;
+}
+
+#displayBlock{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#reseñasTotales{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    margin-bottom: 7.5%;
+}
+
+#estrellasReseñas{
+    display: flex;
+    flex-direction: row;
+
+    margin-left: 10%;
+}
+
+#sumaReseñas{
+    margin-left: 5%;
+    height: 20px;
+    width: 135px;
+
+    color: rgb(255, 250, 241);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12.5pt;
+}
+
+#estrella{
+    margin-right: 1.5%;
+    width: 30px;
+}
+
+#rowReseñas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    margin-top: 3.5%;
+    padding-bottom: 2.5%;
+}
+
+.columnasReseñasCelulares{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: -1.5%;
+}
+
+.columnasEstrellasCelulares{
+    margin-top: -1.5%;
+}
+
+#cantidadReseñas{
+    display: none; 
+}
+  
+#cantidadEstrellas{
+    display: none;
+}
+
+#numeroEstrellas{
+    margin-bottom: 15px;
+
+    color: rgb(255, 250, 241);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13pt;
+    font-weight: 500;   
+}
+
+#numeroReseñas{
+    margin-bottom: 15px;
+
+    color: rgb(255, 250, 241);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 13pt;
+}
+
+#cincoEstrellas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.barraClara{
+    background-color: rgb(120, 56, 56);
+}
+
+.barraOscura{
+    background-color: rgb(125, 38, 38)
+}
+
+#conjuntoEstrellas{
+    width: 250px;
+    margin-left: 2.5%;
+}
+
+#desplegable{
+    margin-right: 2.5%;
+    margin-top: 0.5%;
+}
+
+#estrellas5{
+    width: 32px;
+
+    margin-right: 2%;
+}
+
+#redactante{
+    display: flex;
+    flex-direction: row;
+
+    padding-top: 12.5%;
+    margin-left: 10%;
+}
+
+#infoRedactante{
+    margin-left: 2.5%;
+}
+
+#nickname{
+    width: 90%;
+    
+    color: rgb(120, 56, 56);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15.5pt;
+    font-weight: 500;
+}
+
+#fechaReseña{
+    margin-top: 12.5%;
+    margin-bottom: -0.25%;
+
+    color: rgb(120, 56, 56);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+#ubicacionRedactante{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+#reseña{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    margin-top: 12.5%;
+    padding-bottom: 12.5%;
+}
+
+#textoReseña{
+    width: 85%;
+
+    margin-bottom: 10%;
+}
+
+#tituloReseña{
+    margin-bottom: 14%;
+
+    color: rgb(120, 56, 56);
+    font-size: 21pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+#contenidoReseña{
+    color: rgb(120, 56, 56);
+    font-size: 14.5pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+.fotoReseña{
+    width: 200px;
+}
+
+/* ---------------------------------------  TIENDA  --------------------------------------------- */
+
+#barraTienda{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding: 1%;
+    width: 100%;
+}
+
+#fondoBlurred{
+    width: 100%;
+    height: 680px;
+
+    background-image: url(../imgs/backgroundBlurred.jpg);
+    background-repeat: no-repeat;
+}
+
+#vectoresTienda{
+    width: 235px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 7.5%;
+}
+
+.vectorDelivery{
+    margin-top: 2.5%;
+}
+
+.animacionZoom{
+    transition: transform 1s ease-in-out;
+}
+.animacionZoom:hover{
+    transform: scale(1.075);
+}
+
+.animacionZoomLeve{
+    transition: transform 1s ease-in-out;
+}
+.animacionZoomLeve:hover{
+    transform: scale(1.035);
+}
+
+.animacionZoomAlta{
+    transition: transform 1s ease-in-out;
+}
+.animacionZoomAlta:hover{
+    transform: scale(1.22);
+}
+
+#subtituloTienda{
+    text-align: center;
+    margin-top: 2.5%;
+    color: rgb(255, 250, 241);
+    font-size: 23pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+#tarjetasFlex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 14%;
+}
+
+#tarjetaX1{
+    padding-bottom: 6%;
+}
+
+#tarjetaX2{
+    padding-bottom: 6%;
+}
+
+#tarjetaX4{
+    padding-bottom: 7.5%;
+}
+
+#fondoVector{
+    width: 225px;
+    height: 275px;
+
+    background-color: rgb(120, 56, 56);
+}
+
+#vectorCubiertos{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 25%;
+}
+
+#cantidadPersonas{
+    text-align: center;
+    color: rgb(255, 250, 241);
+    font-size: 35pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+}
+
+#fondoPrecio{
+    height: 150px;
+    width: 225px;
+
+    background-color: rgb(70, 21, 21);
+}
+
+#descripcionTarjeta{
+    padding-top: 7.5%;
+
+    color: rgb(255, 250, 241);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13pt;
+    font-weight: 800;
+    text-align: center;
+}
+
+#fondoPrecio .btn-primary{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+    color: rgb(255, 250, 241);
+    background-color: rgb(70, 21, 21);
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16pt;
+    font-weight: 800;
+
+    border: 3.5px solid rgb(255, 250, 241);
+    border-radius: 30px;
+}
+
+#fondoPrecio .btn-primary:hover{
+    background-color: rgb(255, 250, 241);
+    color: rgb(70, 21, 21);
+}
+

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Orientales</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="imgs/icons/iconoMiniatura.png">
+
+</head>
+<body>
+    <header>
+            <a class="navbar-brand" href="index.html"><img id="logoheader" src="imgs/logoorientales2.png" alt="Logo"></a>
+
+              <div id="menu">
+                <a id="menuHamburguesa">☰</a>
+      
+                    <nav>
+                        <ul>
+                          <li><a href="index.html" class="borderBottom">Home</a></li>
+                          <li><a href="pages/menu.html" class="borderBottom">Menu</a></li>
+                          <li><a href="pages/reseñas.html" class="borderBottom">Reseñas</a></li>
+                          <li><a href="pages/tienda.html">Tienda</a></li>
+                        </ul> 
+                    </nav>
+              </div>
+    </header>
+
+    <main>
+        <section>
+
+          <img src="imgs/fotorestaurante.jpg" alt="Banner Restaurante" id="bannerRest">
+
+        </section>
+
+          <h2 id="frase">¡Vení a probar las porciones más abundantes de Almagro!</h2>
+
+        <section id="comidas">
+
+          <div> <img src="imgs/milanesamontevideo.jpg" alt="Milanesa Montevideo" id="fotomilanesa"></div>
+
+          <div> <img src="imgs/pastas.jpg" alt="Milanesa Montevideo" id="fotopasta"></div>
+
+          <div> <img src="imgs/postre.jpg" alt="Milanesa Montevideo" id="fotopostre"></div>
+
+        </section>
+
+          <p id="vermenu"><a href="pages/menu.html">Ver Menú</a></p>
+
+        <section id="blanco">
+
+          <img src="imgs/banderas.png" alt="Banderas" class="banderas">
+
+            <h2 id="titulo">Horarios</h2>
+
+              <div id="cuadrohorarios">
+                <div id="horarios">
+                  <p id="dias">Lunes a Sábados:</p>
+                  <p id="horas">9:00am - 12:00am</p>
+                  <p id="dias">Domingos:</p>
+                  <p id="horas">Cerrado</p>
+                </div>
+              </div>
+
+          <img src="imgs/banderas.png" alt="Banderas" class="banderas">
+
+              <h2 id="titulo">Visitanos en</h2>
+
+                <p id="direccion">Avenida Rivadavia 3981, Caballito, Ciudad Autónoma de Buenos Aires</p>
+
+                  <div id="marcoIframe">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.700355277068!2d-58.42474232447592!3d-34.61173785792142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca5e89215f49%3A0xe8e3370b6c6008d4!2sLos%20Orientales!5e0!3m2!1sen!2sar!4v1720881861163!5m2!1sen!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="iframe"></iframe>
+                  </div>
+
+          <img src="imgs/banderas.png" alt="Banderas" class="banderas">
+
+              <h2 id="titulo">Reservá tu lugar</h2>
+              
+                <article id="formulario">
+
+                  <form action=".modal-dialog" method="post"></form>
+
+                    <div>
+                      <label for="name">Nombre:</label>
+                      <input type="name" name="name">
+                    </div>
+
+                    <div>
+                      <label for="email">Email:</label>
+                      <input type="email" name="email">
+                    </div>
+
+                    <div>
+                      <label for="number">Comensales:</label>
+                      <select name="number" id="number">
+                          <optgroup label="Horario">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                          </optgroup>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label for="date">Fecha:</label>
+                      <input type="date" name="date">
+                    </div>
+                    
+                    <div>
+                      <label for="horario">Horario:</label>
+                      <select name="time" id="horario">
+                        <optgroup label="Almuerzo">
+                          <option value="11:00">11:00</option>
+                          <option value="11:30">11:30</option>
+                          <option value="12:00">12:00</option>
+                          <option value="12:30">12:30</option>
+                          <option value="13:00">13:00</option>
+                        </optgroup>
+
+                        <optgroup label="Cena">
+                          <option value="20:00">20:00</option>
+                          <option value="20:30">20:30</option>
+                          <option value="21:00">21:00</option>
+                          <option value="21:30">21:30</option>
+                          <option value="22:00">22:00</option>
+                        </optgroup>
+                        </select>
+                    </div>
+
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      Enviar
+                    </button>
+
+                </article>
+
+              <p id="porwhatsapp">O por WhatsApp al:</p>
+              <p id="numerowhatsapp">+54 9 11 4983-1202</p>
+
+        </section>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">¡Su reserva fue registrada!</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Se le enviaran los detalles de la misma a través del email proporcionado.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aceptar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+      <section id="columnas">
+
+          <article id="logofooter" >
+
+            <a href="index.html"><img src="imgs/logoorientales2.png" alt="Los Orientales"></a>
+            
+          </article>
+
+          <article id="contacto">
+            <ul>  
+                <li>Avenida Rivadavia 3981, Almagro, CABA</li>
+                <li>losorientales@gmail.com</li>
+                <li>(011) 4983-1202</li>
+            </ul>
+          </article>
+
+          <article id="redes">
+            <ul> 
+              <li id="subtitulo">Redes</li>
+              <li id="gris"><a href="https://www.facebook.com/p/Bodeg%C3%B3n-Los-Orientales-100041686795364/" target="_blank"><img src="imgs/icons/facebook.png" alt="Facebook" class="animacionZoomAlta"></a></li>
+              <li id="gris"><a href="https://www.instagram.com/losorientalesbodegon/?hl=es-la" target="_blank"><img src="imgs/icons/instagram.png" alt="Instagram" class="animacionZoomAlta"></a></li>
+              <li id="gris"><a href="https://www.instagram.com/losorientalesbodegon/?hl=es-la" target="_blank"><img src="imgs/icons/twitter.png" alt="Twitter" class="animacionZoomAlta"></a></li>
+              <li id="gris"><a href="https://www.instagram.com/losorientalesbodegon/?hl=es-la" target="_blank"><img src="imgs/icons/linkedin.png" alt="LinkedIn" class="animacionZoomAlta"></a></li>
+            </ul>
+        </article>
+
+          <article id="indice">
+            <ul>
+                <li id="subtitulo">Navegación</li>
+                <li id="gris"><a href="index.html">Inicio</a></li>
+                <li id="gris"><a href="pages/menu.html">Menú</a></li>
+                <li id="gris"><a href="pages/reseñas.html">Reseñas</a></li>
+                <li id="gris"><a href="pages/tienda.html">Tienda</a></li>
+            </ul>
+          </article>
+        
+      </section>
+      
+  </footer>
+  
+    <script src="js/bootstrap.js"></script>
+
+</body>
+</html>
